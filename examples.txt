@@ -1,0 +1,7 @@
+examples that work:
+
+19043, 23, (137,139)
+
+314191, 127, (379,879) takes around 1 minute
+
+small numbers should work as well
