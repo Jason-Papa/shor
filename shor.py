@@ -1,8 +1,4 @@
-
-
-
 def gcf(x, n):
-
     for i in range (n, 0, -1):
         if ((x % i == 0) and (n % i == 0)):
             return i
@@ -20,14 +16,12 @@ def quantum_thing(n, guess):
             diffs.append(diff)
     return p
 
-
 if __name__ == "__main__":
-
     n = int(input("N: "))
-
     guess = int(input("Guess: "))
+
     p = quantum_thing(n, guess)
-    print(p)
+
     if p%2 == 0:    
         half_p = p//2
         
@@ -36,6 +30,7 @@ if __name__ == "__main__":
 
         factor_1 = gcf(maybe_factor_1, n)
         factor_2 = gcf(maybe_factor_2, n)
+        
         if (factor_1 * factor_2 == n) : 
             print(factor_1, factor_2)
         else:
